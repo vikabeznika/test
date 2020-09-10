@@ -42,6 +42,7 @@ public class MyTest {
     String text = "Hello, World!";
         List<WebElement> list = driver.findElements(By.xpath("//*[contains(text(),'" + text + "')]"));
         Assert.assertTrue(text, list.size() > 0);
+        System.out.println(text);
     }
 
 }
